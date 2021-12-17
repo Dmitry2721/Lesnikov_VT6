@@ -1,0 +1,27 @@
+
+
+<!DOCTYPE html>
+<html>
+    <html lang="en"> 
+        <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Document</title> 
+        </head>    
+<body>
+    <canvas id="myCanvas"></canvas>
+    <div id="myLegend"></div>
+    <script type="text/javascript" src="script.js"></script>
+    <div style="display: flex;">
+        <input id="01" placeholder="Название">
+        <input id="02" placeholder="Значение" onkeyup="this.value = this.value.replace(/[^0-9]/g,'')">
+        <button onclick="cl()">
+            <p>Готово</p>
+        </button>
+        <button onclick="clean()">
+            <p>Стереть</p>
+        </button>
+    </div>
+</body>
+</html>
